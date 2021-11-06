@@ -1,3 +1,6 @@
+* {
+    max-width: 1200px;
+}
 body {
     display: flex;
     flex-direction: column;
@@ -38,28 +41,45 @@ h2 {
     background-color: lightblue;
 }
 
-.image {
+#school-work-hobbies {
+   padding-left: 70px;
+}
+
+.image img {
     background-position: bottom center;
     border: 2px solid black;
     display: inline-block;
+    column-count: 2;
+    align-items: center;
     margin-top: 4px;
     padding: 30px auto;
-    text-align: center;
+    height: 200px;
+    width: 350px;
 }   
 
-.image img {
-    height: 300px;
-    width: 600px;
-}
-
-.image:hover {
+.top-image img:hover {
     border-color:lightblue;
 }
 
+img:hover {
+    border-color:lightblue;
+}
+
+.top-image img{
+    background-position: bottom center;
+    border: 2px solid black;
+    display: inline-block;
+    column-count: 2;
+    align-items: center;
+    margin-top: 4px;
+    height: 400px;
+    width: 704px;    
+}
+
 #contact-me ul li {
-    display: flex;
+    display: inline-flex;
     list-style: none;
-    padding-bottom: 10px;
+    padding: 10px 40px;
 }
 
 #contact-me ul li a {
@@ -81,14 +101,55 @@ footer a {
     color: black;
 }
 
-@media screen and (max-width: 768px) {
-  main, nav {
+@media screen and (max-width: 992px) {
+    main, nav {
+      display: flex;
       flex-direction: column;
+    }
+    header, h2, footer {
+        background: coral;
+    }
+    .image:hover {
+        border-color: coral;
+    }
+    #school-work-hobbies {
+        padding-left: 0px;
+    }
   }
-  header, h2, footer {
+
+@media screen and (max-width: 768px) {
+    main, nav {
+      flex-direction: column;
+      align-content: center;
+    }
+    header, h2, footer {
       background: lightgray;
-  }
-  .image:hover {
+    }
+    .image:hover {
       border-color: lightgray;
-  }
+    }
+    .top-image img {
+        height: 200px;
+        width: 350px;
+    }
+    #school-work-hobbies {
+        padding-left: 0px;
+    }
 }
+
+@media screen and (max-width: 576px) {
+    main, nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header, h2, footer {
+      background-color: lightgreen;
+    }
+    .image:hover {
+        border-color: lightgreen;
+    }
+    .top-image img {
+        height: 200px;
+        width: 350px;
+    }
+  }
