@@ -5,3 +5,7 @@ To whomever is reading this, these are the steps I took to develop this site.
 4. After gathering everything I made a very simple #reset.css and then started making the rubric of my index.html.
 5. After making my index.html I made sure all the links were functioning in order to start working on my #style.css.
 6. Lastly I started editing the characteristics of the webpage with #style.css.
+
+Link to site: https://ginocorp.github.io/2_Professioinal_Portfolio/
+
+Under the images folder is a screenshot of how the webpage would look like in different resolutions/devices. It is named web_layout_resolution.png. 
